@@ -46,8 +46,13 @@ for (let i = 0; i < codes.length; i++)
   tableHtml += '<td style="text-align: center;">' + capacities[i] + "</td>";
 
   let j = codes[i];
-  tableHtml += '<td style="text-align: center;">' + '<a href = "https://httpbin.org/get?course=' + j + '">신청</a>' + "</td>";
-
+  tableHtml +=
+      '<td style="text-align: center;">' +
+      '<form method="POST" action="https://httpbin.org/post" style="margin: 0;">' +
+      '<input type="hidden" name="course" value="' + codes[i] + '">' +
+      '<button type="submit">신청</button>' +
+      "</form>" +
+      "</td>";
   tableHtml += "</tr>";
 }
 
