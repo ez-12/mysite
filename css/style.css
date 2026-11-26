@@ -129,7 +129,6 @@ ul.move-page
     border-radius: 8px;
     background-color: white;
     overflow: hidden;
-
 }
 
 .ls section h3
@@ -150,8 +149,7 @@ aside
     border: 2px solid #d1c7b7;
     background-color: #f3efe6;
     border-radius: 8px;
-    
-    max-width: 500px;
+    max-width: 500%;
     width: 50%;
 
 }
@@ -167,6 +165,7 @@ aside h4
 .tel
 {
     padding: 12px 12px;
+    
 }
 
 .tel p
@@ -184,7 +183,7 @@ aside h4
 .tel input, select, textarea
 {
     width: 100%;
-    max-width: 400px;
+    max-width: 500%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
